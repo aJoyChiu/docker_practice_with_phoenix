@@ -7,5 +7,7 @@ defmodule DockerPracticeWithPhoenixWeb.Router do
 
   scope "/api", DockerPracticeWithPhoenixWeb do
     pipe_through :api
+
+    get "/users", UserController, :index
   end
 end
